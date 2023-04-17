@@ -40,7 +40,7 @@ Station = Base.classes.Stations
 
 stations_url = "https://www.ncei.noaa.gov/cdo-web/api/v2/stations/?limit=1000&offset="
 
-count = 136000
+count = 0
 response = requests.get(stations_url + str(count + 1), headers={
     'token': config.noaa_api_key
 }).json()
