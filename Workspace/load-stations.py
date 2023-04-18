@@ -16,7 +16,7 @@ import config
 # Load the world map data from geopandas
 world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
 
-DATABASE_URI = 'postgresql://postgres:postgres@localhost:5432/project_3_dev'
+DATABASE_URI = 'postgresql://postgres:postgres@localhost:5432/project_3'
 engine = create_engine(DATABASE_URI)
 session = Session(bind=engine)
 
@@ -82,18 +82,24 @@ session.commit()
 maxCount = int(response["metadata"]["resultset"]["count"])
 
 count += len(response["results"])
-i = 0
+retries = 0
 while (count < maxCount):
-    response = requests.get(stations_url + str(count + 1), headers={
-        'token': config.noaa_api_key
-    }).json()
+    try:
+        response = requests.get(stations_url + str(count + 1), headers={
+            'token': config.noaa_api_key
+        }).json()
 
-    for result in response["results"]:
-        saveStation(result)
+        for result in response["results"]:
+            saveStation(result)
 
-    session.commit()
+        session.commit()
 
-    count += len(response["results"])
-    i += 1
-
+        count += len(response["results"])
+        retries = 0
+    except:
+        retries += 1
+        print(f"Error calling web service for year {year} and offset {count + 1}. Retrying...{retries}")
+        if retries > 3:
+            print("Retried 3 times. Quitting...")
+            break
 session.close()
