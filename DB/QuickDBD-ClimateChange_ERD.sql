@@ -17,7 +17,7 @@ CREATE TABLE "Stations" (
 CREATE TABLE "Temperatures_Readings" (
     "Reading_id" INTEGER   NOT NULL,
     "Station_id" VARCHAR(20)   NOT NULL,
-    "Reading_date" DATETIME   NOT NULL,
+    "Reading_date" TIMESTAMP   NOT NULL,
     "Reading_value" FLOAT   NOT NULL,
     CONSTRAINT "pk_Temperatures_Readings" PRIMARY KEY (
         "Reading_id"
@@ -27,7 +27,7 @@ CREATE TABLE "Temperatures_Readings" (
 CREATE TABLE "Precipitation" (
     "Reading_id" INTEGER   NOT NULL,
     "Station_id" VARCHAR(20)   NOT NULL,
-    "Reading_date" DATETIME   NOT NULL,
+    "Reading_date" TIMESTAMP   NOT NULL,
     "Reading_value" FLOAT   NOT NULL,
     CONSTRAINT "pk_Precipitation" PRIMARY KEY (
         "Reading_id"
@@ -35,7 +35,13 @@ CREATE TABLE "Precipitation" (
 );
 
 CREATE TABLE "CO2-Emission" (
-
+    "Reading_id" SERIAL   NOT NULL,
+    "Country" VARCHAR(200)   NOT NULL,
+    "Reading_date" TIMESTAMP   NOT NULL,
+    "CO2_emission" FLOAT   NOT NULL,
+    CONSTRAINT "pk_CO2-Emission" PRIMARY KEY (
+        "Reading_id"
+     )
 );
 
 ALTER TABLE "Temperatures_Readings" ADD CONSTRAINT "fk_Temperatures_Readings_Station_id" FOREIGN KEY("Station_id")
