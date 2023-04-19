@@ -58,7 +58,20 @@ function createPlot() {
   var graphDiv = getGraphDiv();
 
   Plotly.newPlot(graphDiv, data, layout);
+
+  
 }
 
 createPlot();
+
+//function showSeaLevelPlot() {
+  //var seaLevelPlot = document.getElementById('seaLevelPlot');
+  //seaLevelPlot.style.display = "block";
+  //var temperaturePlot = document.getElementById('temperaturePlot');
+  //temperaturePlot.style.display = "none";
+ // var precipitationPlot = document.getElementById('PrecipitationPlot');
+ // precipitationPlot.style.display = "none";
+//}
+
+
 

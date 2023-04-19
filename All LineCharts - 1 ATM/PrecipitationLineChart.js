@@ -52,3 +52,12 @@ function createPrecipitationPlot() {
   
   createPrecipitationPlot();
   
+
+  //function showPrecipitationPlot() {
+   // var seaLevelPlot = document.getElementById('seaLevelPlot');
+    //seaLevelPlot.style.display = "none";
+   // var temperaturePlot = document.getElementById('temperaturePlot');
+   // temperaturePlot.style.display = "none";
+   // var precipitationPlot = document.getElementById('PrecipitationPlot');
+  //  precipitationPlot.style.display = "block";
+ // }
