@@ -1,6 +1,6 @@
 function createPrecipitationPlot() {
     var trace = {
-      x: Precipitation.map(data => data.Year),
+      x: Precipitation.map(data => data.YEAR),
       y: Precipitation.map(data => data.Value),
       mode: 'lines+markers',
       name: 'Precipitation',
