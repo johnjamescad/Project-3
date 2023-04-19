@@ -52,7 +52,8 @@ function createPlot() {
     }
   };
   
-  
+  var seaLevelPlot = document.getElementById('seaLevelPlot');
+  Plotly.newPlot(seaLevelPlot, data, layout);
 
   var graphDiv = getGraphDiv();
 
