@@ -14,8 +14,8 @@ function createTemperaturePlot() {
     };
     
     // Calculate the average temperature value
-    //var sum = TemperatureData.reduce((acc, cur) => acc + cur.Value, 0);
-    //var avg = sum / TemperatureData.length;
+    var sum = TemperatureData.reduce((acc, cur) => acc + cur.Value, 0);
+    var avg = sum / TemperatureData.length;
   
     // Create a trace for the average temperature line
     var avgTrace = {
