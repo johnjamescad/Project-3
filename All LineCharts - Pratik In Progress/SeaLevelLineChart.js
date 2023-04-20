@@ -29,8 +29,8 @@ function createPlot() {
         color: '#000000' 
       }
     },
-    plot_bgcolor: '#F1F6FF',
-    paper_bgcolor: '#F1F6FF',
+    plot_bgcolor: '#f8f8f8',
+    paper_bgcolor: '#f8f8f8',
     showlegend: true,
     xaxis: {
       title: {

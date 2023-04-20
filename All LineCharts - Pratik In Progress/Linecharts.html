@@ -3,13 +3,26 @@
   <head>
     <title>My Plotly Charts</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <h1>Climate Change Dashboard</h1>
-    <div id="seaLevelPlot"></div>
-    <div id="temperaturePlot"></div>
-    <div id="PrecipitationPlot"></div>
-    <div id="CO2EmissionPlot"></div>
+    <header class="header">
+      <h1 class="title">Climate Change Dashboard</h1>
+    </header>
+    <div id="seaLevelPlot" class="chart"></div>
+    <div id="temperaturePlot" class="chart"></div>
+    <div id="PrecipitationPlot" class="chart"></div>
+    <div id="CO2EmissionPlot" class="chart"></div>
+    <footer class="footer">
+      <p class="created-by">Created by:</p>
+      <ul class="author-list">
+        <li>Fahmida Billa</li>
+        <li>John James</li>
+        <li>Pratik Purohit</li>
+        <li>Victor Dontsov</li>
+        <li>Zahra Alyari-Tabrizi</li>
+      </ul>
+    </footer>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="seaLevelData.js"></script>
     <script src="TemperatureData.js"></script>
@@ -19,8 +32,5 @@
     <script src="TemperatureLineChart.js"></script>
     <script src="PrecipitationLineChart.js"></script>
     <script src="CO2EmissionLineChart.js"></script>
-
-
   </body>
 </html>
-
