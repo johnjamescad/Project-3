@@ -20,15 +20,21 @@ function createCO2EmissionPlot() {
       text: 'Global CO2 Emissions',
       font: {
         family: 'Jost',
-        size: 24
+        size: 24,
+        color: '#000000' 
+
       }
     },
+    plot_bgcolor: '#F1F6FF',
+    paper_bgcolor: '#F1F6FF',
     xaxis: {
       title: {
         text: 'Year',
         font: {
           family: 'Jost',
-          size: 18
+          size: 18,
+          color: '#000000' 
+
         }
       }
     },
@@ -37,7 +43,9 @@ function createCO2EmissionPlot() {
         text: 'CO2 Emissions (Million Tonnes)',
         font: {
           family: 'Jost',
-          size: 18
+          size: 18,
+          color: '#000000' 
+
         }
       }
     }

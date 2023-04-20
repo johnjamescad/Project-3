@@ -11,15 +11,11 @@ function createPlot() {
     name: 'Sea Level Rise',
     line: {
       color: '#b8e0d2'
-
-      
-        },
+    },
     marker: {
       size: 10,
       color: '#809bce'
     }
-    
-    
   };
 
   var data = [trace];
@@ -29,15 +25,20 @@ function createPlot() {
       text: 'Global Mean Sea Level',
       font: {
         family: 'Jost',
-        size: 24
+        size: 24,
+        color: '#000000' 
       }
     },
+    plot_bgcolor: '#F1F6FF',
+    paper_bgcolor: '#F1F6FF',
     xaxis: {
       title: {
         text: 'Year',
         font: {
           family: 'Jost',
-          size: 18
+          size: 18,
+          color: '#000000' 
+
         }
       }
     },
@@ -46,7 +47,9 @@ function createPlot() {
         text: 'Sea Level (inches)',
         font: {
           family: 'Jost',
-          size: 18
+          size: 18,
+          color: '#000000'
+
         }
       }
     }
@@ -58,11 +61,10 @@ function createPlot() {
   var graphDiv = getGraphDiv();
 
   Plotly.newPlot(graphDiv, data, layout);
-
-  
 }
 
 createPlot();
+
 
 //function showSeaLevelPlot() {
   //var seaLevelPlot = document.getElementById('seaLevelPlot');

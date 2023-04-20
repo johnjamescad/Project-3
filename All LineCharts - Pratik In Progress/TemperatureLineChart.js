@@ -14,8 +14,8 @@ function createTemperaturePlot() {
     };
     
     // Calculate the average temperature value
-    var sum = TemperatureData.reduce((acc, cur) => acc + cur.Value, 0);
-    var avg = sum / TemperatureData.length;
+    //var sum = TemperatureData.reduce((acc, cur) => acc + cur.Value, 0);
+    //var avg = sum / TemperatureData.length;
   
     // Create a trace for the average temperature line
     var avgTrace = {
@@ -37,15 +37,21 @@ function createTemperaturePlot() {
         text: 'Global Temperature',
         font: {
           family: 'Jost',
-          size: 24
+          size: 24,
+          color: '#000000' 
+
         }
       },
+      plot_bgcolor: '#F1F6FF',
+      paper_bgcolor: '#F1F6FF',
       xaxis: {
         title: {
           text: 'Year',
           font: {
             family: 'Jost',
-            size: 18
+            size: 18,
+            color: '#000000' 
+
           }
         }
       },
@@ -54,7 +60,9 @@ function createTemperaturePlot() {
           text: 'Temperature (°C)',
           font: {
             family: 'Jost',
-            size: 18
+            size: 18,
+            color: '#000000' 
+
           }
         }
       }

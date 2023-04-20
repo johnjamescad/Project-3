@@ -1,0 +1,23 @@
+body {
+  background-color: #212121;
+  color: #fff;
+  font-family: Jost, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin-top: 50px;
+}
+
+#seaLevelPlot, #temperaturePlot, #PrecipitationPlot, #CO2EmissionPlot {
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+@media screen and (max-width: 768px) {
+  #seaLevelPlot, #temperaturePlot, #PrecipitationPlot, #CO2EmissionPlot {
+    max-width: 100%;
+  }
+}
+
