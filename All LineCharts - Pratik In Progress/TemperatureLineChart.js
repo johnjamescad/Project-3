@@ -44,6 +44,7 @@ function createTemperaturePlot() {
       },
       plot_bgcolor: '#F1F6FF',
       paper_bgcolor: '#F1F6FF',
+      showlegend: true,
       xaxis: {
         title: {
           text: 'Year',

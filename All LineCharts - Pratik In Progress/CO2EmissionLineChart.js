@@ -13,7 +13,20 @@ function createCO2EmissionPlot() {
     }
   };
 
-  var data = [trace];
+  var marker2020 = {
+    x: [2020],
+    y: [CO2EmissionData.find(data => data.Year === 2020).Value],
+    mode: 'markers',
+    name: '2020',
+    marker: {
+      size: 15,
+      color: '#922B21',
+      symbol: 'circle-open'
+    }
+  };
+
+  var data = [trace, marker2020];
+
 
   var layout = {
     title: {
@@ -27,6 +40,7 @@ function createCO2EmissionPlot() {
     },
     plot_bgcolor: '#F1F6FF',
     paper_bgcolor: '#F1F6FF',
+    showlegend: true,
     xaxis: {
       title: {
         text: 'Year',

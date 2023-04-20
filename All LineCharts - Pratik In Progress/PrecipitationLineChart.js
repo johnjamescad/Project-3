@@ -17,6 +17,7 @@ function createPrecipitationPlot() {
   
     var layout = {
       title: {
+        showlegend: true,
         text: 'Global Precipitation',
         font: {
           family: 'Jost',
@@ -27,6 +28,7 @@ function createPrecipitationPlot() {
       },
       plot_bgcolor: '#F1F6FF',
       paper_bgcolor: '#F1F6FF',
+      showlegend: true,
       xaxis: {
         title: {
           text: 'Year',

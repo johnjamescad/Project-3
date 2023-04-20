@@ -31,6 +31,7 @@ function createPlot() {
     },
     plot_bgcolor: '#F1F6FF',
     paper_bgcolor: '#F1F6FF',
+    showlegend: true,
     xaxis: {
       title: {
         text: 'Year',
@@ -38,7 +39,6 @@ function createPlot() {
           family: 'Jost',
           size: 18,
           color: '#000000' 
-
         }
       }
     },
@@ -49,11 +49,15 @@ function createPlot() {
           family: 'Jost',
           size: 18,
           color: '#000000'
-
         }
       }
-    }
+    },
+   
+    
   };
+  
+  
+  
   
   var seaLevelPlot = document.getElementById('seaLevelPlot');
   Plotly.newPlot(seaLevelPlot, data, layout);
