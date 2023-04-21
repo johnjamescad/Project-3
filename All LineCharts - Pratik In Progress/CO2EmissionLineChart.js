@@ -73,3 +73,4 @@ function createCO2EmissionPlot() {
 }
 
 createCO2EmissionPlot();
+

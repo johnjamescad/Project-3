@@ -78,12 +78,5 @@ function createTemperaturePlot() {
   
   createTemperaturePlot();
 
-  //function showTemperaturePlot() {
-   // var seaLevelPlot = document.getElementById('seaLevelPlot');
-   // seaLevelPlot.style.display = "none";
-   // var temperaturePlot = document.getElementById('temperaturePlot');
-   // temperaturePlot.style.display = "block";
-   // var precipitationPlot = document.getElementById('PrecipitationPlot');
-   // precipitationPlot.style.display = "none";
-  //}
+
   
