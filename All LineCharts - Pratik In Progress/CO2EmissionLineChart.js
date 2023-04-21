@@ -17,7 +17,7 @@ function createCO2EmissionPlot() {
     x: [2020],
     y: [CO2EmissionData.find(data => data.Year === 2020).Value],
     mode: 'markers',
-    name: '2020',
+    name: '2020 (Pandemic)',
     marker: {
       size: 15,
       color: '#922B21',
