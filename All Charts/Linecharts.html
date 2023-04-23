@@ -15,19 +15,29 @@
       <button class="tablinks" onclick="openChart(event, 'temperaturePlot')">Temperature</button>
       <button class="tablinks" onclick="openChart(event, 'PrecipitationPlot')">Precipitation</button>
       <button class="tablinks" onclick="openChart(event, 'CO2EmissionPlot')">CO2 Emission</button>
+      <button class="tablinks" onclick="openChart(event, 'choroplethCO2')">CO2 Choropleth</button>
+      <button class="tablinks" onclick="openChart(event, 'precipitationChoropleth')">Precipitation Choropleth</button>
+      <button class="tablinks" onclick="openChart(event, 'temperatureChoropleth')">Temperature Choropleth</button>
     </div>
+    
     <div class="chart-section">
       <div id="seaLevelPlot" class="chart"></div>
       <div id="temperaturePlot" class="chart"></div>
       <div id="PrecipitationPlot" class="chart"></div>
       <div id="CO2EmissionPlot" class="chart"></div>
+      <div id="choroplethCO2" class="chart"></div>
+      <div id="precipitationChoropleth" class="chart"></div>
+      <div id="temperatureChoropleth" class="chart"></div>
     </div>
+    
     <div class="data-section">
     </div>
+    
     <footer class="footer">
       <p class="created-by">Created by:</p>
       <p class="authors">Fahmida Billa, John James, Pratik Purohit, Victor Dontsov, Zahra Alyari-Tabrizi</p>
     </footer>
+    
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="seaLevelData.js"></script>
     <script src="TemperatureData.js"></script>
@@ -37,6 +47,9 @@
     <script src="TemperatureLineChart.js"></script>
     <script src="PrecipitationLineChart.js"></script>
     <script src="CO2EmissionLineChart.js"></script>
+    <script src="ChoroplethMap/static\js/choroplethCO2.js"></script>
+    <script src="ChoroplethMap/static\js/precipitationChoropleth.js"></script>
+    <script src="ChoroplethMap/static\js/temperatureChoropleth.js"></script>
     <script src="eventlisteners.js"></script>
   </body>
 </html>
