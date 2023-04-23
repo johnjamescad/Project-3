@@ -37,7 +37,7 @@ CREATE TABLE "Precipitation_Readings" (
 CREATE TABLE "CO2-Emission" (
     "Reading_id" SERIAL   NOT NULL,
     "Country" VARCHAR(200)   NOT NULL,
-    "Reading_date" TIMESTAMP   NOT NULL,
+    "Reading_date" INTEGER   NOT NULL,
     "CO2_emission" FLOAT   NOT NULL,
     CONSTRAINT "pk_CO2-Emission" PRIMARY KEY (
         "Reading_id"

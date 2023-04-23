@@ -1,7 +1,7 @@
-function createCO2EmissionPlot() {
+function createCO2EmissionPlot(data) {
   var trace = {
-    x: CO2EmissionData.map(data => data.Year),
-    y: CO2EmissionData.map(data => data.Value),
+    x: data.map(data => data.Year),
+    y: data.map(data => data.Value),
     mode: 'lines+markers',
     name: 'CO2 Emissions',
     line: {
@@ -15,7 +15,7 @@ function createCO2EmissionPlot() {
 
   var marker2020 = {
     x: [2020],
-    y: [CO2EmissionData.find(data => data.Year === 2020).Value],
+    y: [data.find(data => data.Year === 2020).Value],
     mode: 'markers',
     name: '2020 (Pandemic)',
     marker: {
@@ -69,5 +69,5 @@ function createCO2EmissionPlot() {
   Plotly.newPlot(CO2EmissionPlot, data, layout);
 }
 
-createCO2EmissionPlot();
-
+createCO2EmissionPlot(CO2EmissionData);
+// d3.json("http://127.0.0.1:5000/api/v1.0/annual_co2_emission").then(data => createCO2EmissionPlot(data));
