@@ -11,23 +11,43 @@
     </header>
     
     <div class="tab">
-      <button class="tablinks" onclick="openChart(event, 'SeaLevelPlot')">Sea Level</button>
-      <button class="tablinks" onclick="openChart(event, 'TemperaturePlot')">Temperature</button>
-      <button class="tablinks" onclick="openChart(event, 'PrecipitationPlot')">Precipitation</button>
-      <button class="tablinks" onclick="openChart(event, 'CO2EmissionPlot')">CO2 Emission</button>
-      <button class="tablinks" onclick="openChart(event, 'CO2ChoroplethPlot')">CO2 Choropleth</button>
-      <button class="tablinks" onclick="openChart(event, 'PrecipitationChoroplethPlot')">Precipitation Choropleth</button>
-      <button class="tablinks" onclick="openChart(event, 'TemperatureChoroplethPlot')">Temperature Choropleth</button>
+      <button class="tablinks" onclick="openChart(event, 'tempData')">Temperature Data</button>
+      <button class="tablinks" onclick="openChart(event, 'precipData')">Precipitation Data</button>
+      <button class="tablinks" onclick="openChart(event, 'co2Data')">CO2 Data</button>
+      <button class="tablinks" onclick="openChart(event, 'seaLevelData')">Sea Level Data</button>
     </div>
     
+    <div id="tempData" class="chart">
+      <h3>Temperature Data</h3>
+      <div id="TemperaturePlot"></div>
+      <div id="TemperatureChoroplethPlot"></div>
+    </div>
+    
+    <div id="precipData" class="chart">
+      <h3>Precipitation Data</h3>
+      <div id="PrecipitationPlot"></div>
+      <div id="PrecipitationChoroplethPlot"></div>
+    </div>
+    
+    <div id="co2Data" class="chart">
+      <h3>CO2 Data</h3>
+      <div id="CO2EmissionPlot"></div>
+      <div id="CO2ChoroplethPlot"></div>
+    </div>
+    
+    <div id="seaLevelData" class="chart">
+      <h3>Sea Level Data</h3>
+      <div id="SeaLevelPlot"></div>
+    </div>    
+    
     <div class="chart-section">
-      <div id="SeaLevelPlot" class="chart"></div>
       <div id="TemperaturePlot" class="chart"></div>
+      <div id="TemperatureChoroplethPlot" class="chart"></div>
       <div id="PrecipitationPlot" class="chart"></div>
+      <div id="PrecipitationChoroplethPlot" class="chart"></div>
       <div id="CO2EmissionPlot" class="chart"></div>
       <div id="CO2ChoroplethPlot" class="chart"></div>
-      <div id="PrecipitationChoroplethPlot" class="chart"></div>
-      <div id="TemperatureChoroplethPlot" class="chart"></div>
+      <div id="SeaLevelPlot" class="chart"></div>
     </div>
     
     <div class="data-section">
@@ -54,6 +74,6 @@
     <script src="choroplethCO2.js"></script>
     <script src="precipitationChoropleth.js"></script>
     <script src="temperatureChoropleth.js"></script>
-    <script src="eventlisteners.js" defer></script>
+    <script src="eventlisteners.js" ></script>
   </body>
 </html>
