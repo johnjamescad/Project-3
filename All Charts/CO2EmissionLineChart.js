@@ -67,9 +67,6 @@ function createCO2EmissionPlot() {
 
   var CO2EmissionPlot = document.getElementById('CO2EmissionPlot');
   Plotly.newPlot(CO2EmissionPlot, data, layout);
-  var graphDiv = getGraphDiv();
-
-  Plotly.newPlot(graphDiv, data, layout);
 }
 
 createCO2EmissionPlot();

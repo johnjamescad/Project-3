@@ -69,11 +69,9 @@ function createTemperaturePlot() {
       }
     };
       
-    var temperaturePlot = document.getElementById('temperaturePlot');
+    var temperaturePlot = document.getElementById('TemperaturePlot');
     Plotly.newPlot(temperaturePlot, data, layout);
-    var graphDiv = getGraphDiv();
-    
-    Plotly.newPlot(graphDiv, data, layout);
+
   }
   
   createTemperaturePlot();

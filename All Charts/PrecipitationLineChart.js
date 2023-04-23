@@ -55,9 +55,6 @@ function createPrecipitationPlot() {
   
     var precipitationPlot = document.getElementById('PrecipitationPlot');
     Plotly.newPlot(precipitationPlot, data, layout);
-    var graphDiv = getGraphDiv();
-  
-    Plotly.newPlot(graphDiv, data, layout);
   }
   
   createPrecipitationPlot();

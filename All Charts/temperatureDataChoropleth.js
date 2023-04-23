@@ -1,4 +1,4 @@
-let temperatureData = [
+let temperatureChoroplethData = [
     {
       "Year": 1992,
       "Value": 6.7825,

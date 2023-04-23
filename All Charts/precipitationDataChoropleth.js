@@ -1,4 +1,4 @@
-let precipitationData = [
+let precipitationDataChoropleth = [
     {
       "Year": 1992,
       "Value": 574.9285714285714,
