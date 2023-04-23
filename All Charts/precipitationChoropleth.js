@@ -88,4 +88,4 @@ function initializeprecipitationChoropleth(error, data) {
 }
 
 // Plotly.d3.json("CO2Data.json", initializeChoropleth(error, data));
-initializeprecipitationChoropleth(null, precipitationData);
+initializeprecipitationChoropleth(null, precipitationDataChoropleth);
