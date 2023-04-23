@@ -15,5 +15,8 @@ function openChart(evt, chartName) {
 
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(chartName).style.display = "block";
+
   evt.currentTarget.className += " active";
 }
+
+d3.select(".tab > button:first-child").dispatch('click');
