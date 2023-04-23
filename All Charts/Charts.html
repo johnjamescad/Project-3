@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Plotly Charts</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header class="header">
+      <a href="Charts.html"><h1 class="title">Climate Change Dashboard</h1></a>
+    </header>
+    
+    <div class="tab">
+      <button class="tablinks" onclick="openChart(event, 'SeaLevelPlot')">Sea Level</button>
+      <button class="tablinks" onclick="openChart(event, 'TemperaturePlot')">Temperature</button>
+      <button class="tablinks" onclick="openChart(event, 'PrecipitationPlot')">Precipitation</button>
+      <button class="tablinks" onclick="openChart(event, 'CO2EmissionPlot')">CO2 Emission</button>
+      <button class="tablinks" onclick="openChart(event, 'CO2ChoroplethPlot')">CO2 Choropleth</button>
+      <button class="tablinks" onclick="openChart(event, 'PrecipitationChoroplethPlot')">Precipitation Choropleth</button>
+      <button class="tablinks" onclick="openChart(event, 'TemperatureChoroplethPlot')">Temperature Choropleth</button>
+    </div>
+    
+    <div class="chart-section">
+      <div id="SeaLevelPlot" class="chart"></div>
+      <div id="TemperaturePlot" class="chart"></div>
+      <div id="PrecipitationPlot" class="chart"></div>
+      <div id="CO2EmissionPlot" class="chart"></div>
+      <div id="CO2ChoroplethPlot" class="chart"></div>
+      <div id="PrecipitationChoroplethPlot" class="chart"></div>
+      <div id="TemperatureChoroplethPlot" class="chart"></div>
+    </div>
+    
+    <div class="data-section">
+    </div>
+    
+    <footer class="footer">
+      <p class="created-by">Created by:</p>
+      <p class="authors">Fahmida Billa, John James, Pratik Purohit, Victor Dontsov, Zahra Alyari-Tabrizi</p>
+    </footer>
+    
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="CO2DataChoropleth.js"></script>
+    <script src="precipitationDataChoropleth.js"></script>
+    <script src="temperatureDataChoropleth.js"></script>
+    <script src="seaLevelData.js"></script>
+    <script src="TemperatureData.js"></script>
+    <script src="PrecipitationData.js"></script>
+    <script src="CO2EmissionData.js"></script>
+    <script src="SeaLevelLineChart.js"></script>
+    <script src="TemperatureLineChart.js"></script>
+    <script src="PrecipitationLineChart.js"></script>
+    <script src="CO2EmissionLineChart.js"></script>
+    <script src="choroplethCO2.js"></script>
+    <script src="precipitationChoropleth.js"></script>
+    <script src="temperatureChoropleth.js"></script>
+    <script src="eventlisteners.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: Jost, sans-serif;
+  text-align: center;
+}
+
+.header {
+  background-color: #212121;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.title {
+  font-size: 36px;
+  margin-top: 50px auto;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+
+  
+}
+
+#seaLevelPlot,
+#temperaturePlot,
+#PrecipitationPlot,
+#CO2EmissionPlot {
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+@media screen and (max-width: 768px) {
+  #seaLevelPlot,
+  #temperaturePlot,
+  #PrecipitationPlot,
+  #CO2EmissionPlot {
+    max-width: 100%;
+  }
+  
+  /* Update for small screens */
+  .tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tablinks {
+    margin-bottom: 10px;
+  }
+}
+
+.chart {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Add new styles for tabs */
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #212121;
+  border-radius: 0 0 10px 10px;
+}
+
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 18px;
+  margin: 0 10px;
+  color: #fff;
+}
+
+.tab button:hover {
+  background-color: #333;
+}
+
+.tab button.active {
+  background-color: #333;
+}
+
+.footer {
+  background-color: #212121;
+  color: #fff;
+  font-size: 14px;
+  padding: 20px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 10px 10px 10px 10px;
+  flex-direction: column;
+}
+
+
+.created-by {
+  margin-right: 10px;
+}
+
+.author-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.author-list li {
+  margin-right: 10px;
+}

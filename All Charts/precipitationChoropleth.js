@@ -2,7 +2,7 @@ years = [];
 for (var i = 1992; i <= 2022; ++i) {
     years.push(i);
 }
-function initializetempChoropleth(error, data) {
+function initializeprecipitationChoropleth(error, data) {
     if (error) {
         throw error;
     }
@@ -12,10 +12,10 @@ function initializetempChoropleth(error, data) {
     for (var i in years) {
         var dataForCurrentYear = data.filter(item => item.Year == years[i]);
         var countryList = [];
-        var temperatureList = [];
+        var precipitationList = [];
         for (var j = 0; j < dataForCurrentYear.length; ++j) {
             countryList.push(dataForCurrentYear[j].Country);
-            temperatureList.push(dataForCurrentYear[j].Value);
+            precipitationList.push(dataForCurrentYear[j].Value);
         }
 
         frames.push({
@@ -24,9 +24,9 @@ function initializetempChoropleth(error, data) {
                 type: 'choropleth',
                 locationmode: 'country names',
                 locations: countryList,
-                z: temperatureList,
+                z: precipitationList,
                 text: countryList,
-                colorscale: 'YlOrRd',
+                colorscale: 'Blackbody',
                 autocolorscale: false,
                 reversescale: true,
                 marker: {
@@ -41,7 +41,7 @@ function initializetempChoropleth(error, data) {
                 colorbar: {
                     autotic: false,
                     tickprefix: '',
-                    title: 'Temperature(C)'
+                    title: 'Precipitation'
                 }
             }]
         });
@@ -60,7 +60,7 @@ function initializetempChoropleth(error, data) {
     var layout = {
         width: "800px",
         height: "600px",
-        title: 'Temperature by Country',
+        title: 'Precipitation by Country',
         geo: {
             scope: 'world',
             projection: {
@@ -80,7 +80,7 @@ function initializetempChoropleth(error, data) {
         }]
     };
 
-    Plotly.newPlot('TemperatureChoroplethPlot', {
+    Plotly.newPlot('PrecipitationChoroplethPlot', {
         data: frames[0].data,
         layout: layout,
         frames: frames
@@ -88,4 +88,4 @@ function initializetempChoropleth(error, data) {
 }
 
 // Plotly.d3.json("CO2Data.json", initializeChoropleth(error, data));
-initializetempChoropleth(null, temperatureData);
+initializeprecipitationChoropleth(null, precipitationDataChoropleth);
