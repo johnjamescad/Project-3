@@ -12,30 +12,38 @@ body {
 }
 
 .title {
-  font-size: 36px;
-  margin-top: 50px auto;
+  font-size: 48px; /* change font size */
+  margin: 50px auto 0;
   color: #fff;
   cursor: pointer;
   text-decoration: none;
-
-  
+  max-width: 90%;
+  text-align: center;
 }
 
-#seaLevelPlot,
-#temperaturePlot,
-#PrecipitationPlot,
-#CO2EmissionPlot {
+#SeaLevelLineChart,
+#TemperatureLineChart,
+#PrecipitationLineChart,
+#CO2EmissionLineChart,
+#CO2ChoroplethPlot,
+#PrecipitationChoroplethPlot,
+#TemperatureChoroplethPlot {
   margin: 50px auto;
   max-width: 800px;
 }
 
 @media screen and (max-width: 768px) {
-  #seaLevelPlot,
-  #temperaturePlot,
-  #PrecipitationPlot,
-  #CO2EmissionPlot {
+  #SeaLevelLineChart,
+  #TemperatureLineChart,
+  #PrecipitationLineChart,
+  #CO2EmissionLineChart,
+  #CO2ChoroplethPlot,
+  #PrecipitationChoroplethPlot,
+  #TemperatureChoroplethPlot {
     max-width: 100%;
   }
+}
+
   
   /* Update for small screens */
   .tab {
@@ -47,7 +55,6 @@ body {
   .tablinks {
     margin-bottom: 10px;
   }
-}
 
 .chart {
   background-color: #333;
