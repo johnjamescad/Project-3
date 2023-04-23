@@ -1,8 +1,3 @@
-function getGraphDiv() {
-  var graphDiv = document.getElementById('myPlot');
-  return graphDiv;
-}
-
 function createPlot() {
   var trace = {
     x: seaLevelData.map(data => data.Year),
@@ -56,21 +51,8 @@ function createPlot() {
     
   };
   
-  
-  
-  
-  var seaLevelPlot = document.getElementById('seaLevelPlot');
+  var seaLevelPlot = document.getElementById('SeaLevelPlot');
   Plotly.newPlot(seaLevelPlot, data, layout);
-
-  var graphDiv = getGraphDiv();
-
-  Plotly.newPlot(graphDiv, data, layout);
 }
 
 createPlot();
-
-
-
-
-
-
