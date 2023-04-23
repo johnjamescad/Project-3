@@ -7,8 +7,15 @@
   </head>
   <body>
     <header class="header">
-      <h1 class="title">Climate Change Dashboard</h1>
+      <a href="Linecharts.html"><h1 class="title">Climate Change Dashboard</h1></a>
     </header>
+    
+    <div class="tab">
+      <button class="tablinks" onclick="openChart(event, 'seaLevelPlot')">Sea Level</button>
+      <button class="tablinks" onclick="openChart(event, 'temperaturePlot')">Temperature</button>
+      <button class="tablinks" onclick="openChart(event, 'PrecipitationPlot')">Precipitation</button>
+      <button class="tablinks" onclick="openChart(event, 'CO2EmissionPlot')">CO2 Emission</button>
+    </div>
     <div class="chart-section">
       <div id="seaLevelPlot" class="chart"></div>
       <div id="temperaturePlot" class="chart"></div>
@@ -20,6 +27,7 @@
     <footer class="footer">
       <p class="created-by">Created by:</p>
       <p class="authors">Fahmida Billa, John James, Pratik Purohit, Victor Dontsov, Zahra Alyari-Tabrizi</p>
+    </footer>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="seaLevelData.js"></script>
     <script src="TemperatureData.js"></script>
@@ -29,5 +37,6 @@
     <script src="TemperatureLineChart.js"></script>
     <script src="PrecipitationLineChart.js"></script>
     <script src="CO2EmissionLineChart.js"></script>
+    <script src="eventlisteners.js"></script>
   </body>
 </html>
