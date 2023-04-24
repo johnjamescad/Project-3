@@ -1,18 +1,18 @@
 body {
-  background-color: #1a1a1a;
+  background-image: linear-gradient(to bottom, #40B3A2, #1E5285);
   color: #fff;
   font-family: Jost, sans-serif;
   text-align: center;
 }
 
+
 .header {
-  background-color: #212121;
   padding: 10px;
   border-radius: 10px 10px 0 0;
 }
 
 .title {
-  font-size: 48px; /* change font size */
+  font-size: 72px; 
   margin: 50px auto 0;
   color: #fff;
   cursor: pointer;
@@ -57,7 +57,6 @@ body {
   }
 
 .chart {
-  background-color: #333;
   border-radius: 10px;
   padding: 20px;
 }
@@ -68,8 +67,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #212121;
   border-radius: 0 0 10px 10px;
+  flex-direction: row; 
 }
 
 .tab button {
@@ -84,15 +83,14 @@ body {
 }
 
 .tab button:hover {
-  background-color: #333;
+  background-color: #40B3A2;
 }
 
 .tab button.active {
-  background-color: #333;
+  background-color: #DC6641;
 }
 
 .footer {
-  background-color: #212121;
   color: #fff;
   font-size: 14px;
   padding: 20px;
