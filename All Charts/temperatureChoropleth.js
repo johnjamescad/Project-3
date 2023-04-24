@@ -58,13 +58,13 @@ function initializetempChoropleth(error, data) {
     }
 
     var layout = {
-        width: "1000px",
-        height: "600px",
+        width: "1000",
+        height: "800",
         title: 'Temperature by Country',
         geo: {
             scope: 'world',
             projection: {
-                type: 'mercator'
+                type: 'robinson'
             },
             showlakes: true,
             lakecolor: 'rgb(255, 255, 255)',
@@ -73,6 +73,7 @@ function initializetempChoropleth(error, data) {
             showcountries: true,
             countrycolor: 'rgb(255, 255, 255)'
         },
+        
         sliders: [{
             active: 0,
             pad: {t: 0},
