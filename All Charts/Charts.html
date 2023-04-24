@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Plotly Charts</title>
+    <title>Climate Change Visualization - Dashboard</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -34,6 +34,7 @@
     
     <div id="co2Data" class="chart">
       <h3>CO2 Data</h3>
+      <div id="co2-bar-race" class = "chartdiv" ></div>
       <div id="CO2EmissionPlot"></div>
       <div id="CO2ChoroplethPlot"></div>
       <div id="CO2Box"></div>
@@ -50,10 +51,17 @@
       <p class="created-by">Created by:</p>
       <p class="authors">Fahmida Billa, John James, Pratik Purohit, Victor Dontsov, Zahra Alyari-Tabrizi</p>
     </footer>
-    
+
+
+        <!-- Scripts  -->
+
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="CO2DataChoropleth.js"></script>
+    <script src="CO2Data-Transformed.js"></script>
     <script src="precipitationDataChoropleth.js"></script>
     <script src="temperatureDataChoropleth.js"></script>
     <script src="seaLevelData.js"></script>
@@ -71,6 +79,8 @@
     <script src="box_precipitation.js"></script>
     <script src="box_co2.js"></script>
     <script src="eventlisteners.js" ></script>
+    <script src="am5-chart-race.js" ></script>
+
 
     <!--
       <script src="box_co2.js"></script>
