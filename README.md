@@ -10,6 +10,6 @@
 [Project Proposal](Project-3-Proposal.pdf)
 
 
-[Project Presentation][Final-Climate-Change-Presentation-Project 3.pdf](https://github.com/johnjamescad/Project-3/blob/main/Final-Climate-Change-Presentation-Project%203.pdf)
+Project Presentation [Final-Climate-Change-Presentation-Project 3.pdf](https://github.com/johnjamescad/Project-3/blob/main/Final-Climate-Change-Presentation-Project%203.pdf)
   
   
