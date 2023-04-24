@@ -15,7 +15,7 @@ function prepareData(data) {
         for (y in annualData) {
             obj[annualData[y].country] = annualData[y].value;
             ++i;
-            if (i > 10) {
+            if (i > 6) {
                 break;
             }
         }
@@ -82,6 +82,7 @@ function prepareAmChart(allData, divId) {
             maxDeviation: 0,
             min: 0,
             strictMinMax: true,
+            // extraMin: 0.1,
             extraMax: 0.1,
             renderer: am5xy.AxisRendererX.new(root, {})
         }));
@@ -126,7 +127,7 @@ function prepareAmChart(allData, divId) {
         });
 
         var label = chart.plotContainer.children.push(am5.Label.new(root, {
-            text: "2002",
+            text: "1991",
             fontSize: "8em",
             opacity: 0.2,
             x: am5.p100,
@@ -186,15 +187,18 @@ function prepareAmChart(allData, divId) {
             });
         }
 
-        var year = 1992;
+        var year = 1991;
+        var direction = 1;
 
         // update data with values each 1.5 sec
         var interval = setInterval(function () {
-            year++;
+            year += direction;
 
-            if (year > 2018) {
-                clearInterval(interval);
-                clearInterval(sortInterval);
+            if (year > 2021) {
+                // direction = -1;
+                year = 1991
+            } else if (year < 1992) {
+                // direction = 1;
             }
 
             updateData();
@@ -242,14 +246,18 @@ function prepareAmChart(allData, divId) {
                 });
 
                 yAxis.zoom(0, itemsWithNonZero / yAxis.dataItems.length);
+                // xAxis.zoom(0, allData[year][series.dataItems[0].get("categoryY")] * 1.1);
             }
         }
 
         setInitialData();
+
+        /*
         setTimeout(function () {
             year++;
             updateData();
         }, 50);
+        */
 
         // Make stuff animate on load
         // https://www.amcharts.com/docs/v5/concepts/animations/
