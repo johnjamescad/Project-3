@@ -58,13 +58,13 @@ function initializeprecipitationChoropleth(error, data) {
     }
 
     var layout = {
-        width: "800px",
-        height: "600px",
+        width: "1000",
+        height: "800",
         title: 'Precipitation by Country',
         geo: {
             scope: 'world',
             projection: {
-                type: 'mercator'
+                type: 'robinson'
             },
             showlakes: true,
             lakecolor: 'rgb(255, 255, 255)',

@@ -37,16 +37,11 @@ body {
   text-align: center;
 }
 
-#SeaLevelLineChart,
-#TemperatureLineChart,
-#PrecipitationLineChart,
-#CO2EmissionLineChart,
-#CO2ChoroplethPlot,
-#PrecipitationChoroplethPlot,
-#TemperatureChoroplethPlot {
-  margin: 50px auto;
-  max-width: 800px;
+.js-plotly-plot > div.plot-container > div.svg-container
+   {
+    margin: 50px auto
 }
+
 
 @media screen and (max-width: 768px) {
   #SeaLevelLineChart,
@@ -60,7 +55,7 @@ body {
   }
 }
 
-
+.
 .chartdiv {
   width: 100%;
   height: 500px;
@@ -141,3 +136,4 @@ body {
 .author-list li {
   margin-right: 10px;
 }
+
