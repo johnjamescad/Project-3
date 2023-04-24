@@ -10,7 +10,7 @@ for (let i = 0; i < Precipitation.length; i++) {
    if (Precipitation[i].YEAR >= 1992 && Precipitation[i].YEAR < 2002){dec1.push(val)} 
     else if (Precipitation[i].YEAR >= 2002 && Precipitation[i].YEAR < 2012) {dec2.push(val)} 
     else if (Precipitation[i].YEAR >= 2012 && Precipitation[i].YEAR < 2022) {dec3.push(val)}}
- console.log(dec3);
+ //console.log(dec3);
  var avg = sum / Precipitation.length;
      var trace1 = {y: dec1, name: '1992-2001', type: 'box', boxmean: true,};
      var trace2 = {y: dec2, name: '2002-2011', type: 'box', boxmean: true,};

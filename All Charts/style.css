@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(-45deg, #40B3A2, #BC7198, #5A77FF, #40B3A2);
+  background-image: linear-gradient(-45deg, #40B3A2, #E8A87C, #C38D9D, #7DC2AD, #E27D5F);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
   font-family: Jost, sans-serif;
@@ -110,7 +110,7 @@ body {
 .footer {
   color: #fff;
   font-size: 18px;
-  padding: 20px;
+    padding: 20px;
   margin-top: 50px;
   display: flex;
   justify-content: flex-end;
