@@ -1,12 +1,12 @@
 body {
-  background-color: #40B3A2;
+  background-image: linear-gradient(to bottom, #40B3A2, #1E5285);
   color: #fff;
   font-family: Jost, sans-serif;
   text-align: center;
 }
 
+
 .header {
-  background-color: #40B3A2;
   padding: 10px;
   border-radius: 10px 10px 0 0;
 }
@@ -57,7 +57,6 @@ body {
   }
 
 .chart {
-  background-color: #40B3A2;
   border-radius: 10px;
   padding: 20px;
 }
@@ -68,7 +67,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #40B3A2;
   border-radius: 0 0 10px 10px;
   flex-direction: row; 
 }
@@ -93,7 +91,6 @@ body {
 }
 
 .footer {
-  background-color: #40B3A2;
   color: #fff;
   font-size: 14px;
   padding: 20px;

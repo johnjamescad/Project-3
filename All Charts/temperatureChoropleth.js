@@ -59,7 +59,7 @@ function initializetempChoropleth(error, data) {
 
     var layout = {
         width: "1000px",
-        height: "800px",
+        height: "600px",
         title: 'Temperature by Country',
         geo: {
             scope: 'world',
