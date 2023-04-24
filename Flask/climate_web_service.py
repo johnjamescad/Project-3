@@ -39,11 +39,5 @@ def annual_co2_emission():
     addCommonHeaders(response)
     return response
 
-@app.route("/api/v1.0/person")
-def welcome():
-    response = jsonify({'name': 'John', 'place': 'Kitchener'})
-    addCommonHeaders(response)
-    return response
-
 if __name__ == '__main__':
     app.run(debug=True)
