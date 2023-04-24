@@ -7,9 +7,9 @@
 - Zahra Alyari-Tabrizi  
 
 ## Topic - Climate Change Visulaization  
-[Project Proposal](Project-3-Proposal.pdf)
-
-
-[Project Presentation](https://github.com/johnjamescad/Project-3/blob/main/Final-Climate-Change-Presentation-Project%203.pdf)
+[Project Proposal](Project-3-Proposal.pdf)  
+[Project Presentation](https://github.com/johnjamescad/Project-3/blob/main/Final-Climate-Change-Presentation-Project%203.pdf)  
   
+## The Dashboard  
+[Dashboard](https://johnjamescad.github.io/Project-3/)  
   
