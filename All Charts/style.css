@@ -1,8 +1,21 @@
 body {
-  background-image: linear-gradient(to bottom, #40B3A2, #1E5285);
-  color: #fff;
+  background-image: linear-gradient(-45deg, #40B3A2, #BC7198, #5A77FF, #40B3A2);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
   font-family: Jost, sans-serif;
   text-align: center;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 
@@ -10,7 +23,10 @@ body {
   padding: 10px;
   border-radius: 10px 10px 0 0;
 }
+.header > a {
+  text-decoration: none;
 
+}
 .title {
   font-size: 72px; 
   margin: 50px auto 0;
@@ -59,6 +75,7 @@ body {
 .chart {
   border-radius: 10px;
   padding: 20px;
+  color: #fff;
 }
 
 /* Add new styles for tabs */
@@ -92,7 +109,7 @@ body {
 
 .footer {
   color: #fff;
-  font-size: 14px;
+  font-size: 18px;
   padding: 20px;
   margin-top: 50px;
   display: flex;
