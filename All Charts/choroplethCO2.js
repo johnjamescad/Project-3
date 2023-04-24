@@ -64,8 +64,8 @@ function initializeChoropleth(error, data) {
     }
 
     var layout = {
-        width: "1920px",
-        height: "1080px",
+    width: "1000px",
+    height: "600px",
         title: 'CO2 Emissions by Country',
         geo: {
             scope: 'world',
