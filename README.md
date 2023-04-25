@@ -13,3 +13,10 @@
 ## The Dashboard  
 [Dashboard](https://johnjamescad.github.io/Project-3/)  
   
+## Notes  
+- All ETL work done is available in "[Workspace](Workspace)" directory  
+- Table design and SQL views are in "[DB](DB)" directory  
+- Partial work done for climate event map, which does web scrapping to capture climate related events is also included. File: [climate-event-map.py](Workspace/climate-event-map.py)  
+- The JSON generated for climate event map is also saved to [Climate-Events.json](All%20Charts/Climate-Events.json)  
+  
+  
