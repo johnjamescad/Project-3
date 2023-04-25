@@ -70,4 +70,9 @@ function createCO2EmissionPlot(data) {
 }
 
 createCO2EmissionPlot(CO2EmissionData);
+
+/*
+ * To use data from webservice, comment above line and uncomment below line.
+ */
+
 // d3.json("http://127.0.0.1:5000/api/v1.0/annual_co2_emission").then(data => createCO2EmissionPlot(data));

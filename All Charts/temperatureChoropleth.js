@@ -88,5 +88,11 @@ function initializetempChoropleth(error, data) {
     });
 }
 
-// Plotly.d3.json("CO2Data.json", initializeChoropleth(error, data));
 initializetempChoropleth(null, temperatureChoroplethData);
+
+/*
+ * To use data from webservice, comment above line and uncomment below line.
+ */
+
+// d3.json("http://127.0.0.1:5000/api/v1.0/temperature_readings").then(data => initializetempChoropleth(null, data));
+
