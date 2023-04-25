@@ -75,7 +75,7 @@ def annual_temperature_readings():
     result_list = []
     for (year, value) in result:
         temp_dict = {}
-        temp_dict["Year"] = year
+        temp_dict["YEAR"] = year
         temp_dict["Value"] = value
         result_list.append(temp_dict)
 
