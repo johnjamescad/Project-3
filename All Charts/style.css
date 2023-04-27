@@ -103,7 +103,7 @@ body {
 }
 
 .tab button.active {
-  background-color: #41dbd4;
+  background-color: #719eff;
 }
 
 .footer {
@@ -138,10 +138,6 @@ body {
   padding: 20px;
 }
 
-/* Style the About Us tab button when active */
-.tab button.active {
-  background-color: #719eff;
-}
 
 /* Style the About Us tab content */
 /* Style the About Us tab content */
@@ -180,4 +176,31 @@ body {
   margin-bottom: 5px;
 }
 
+#aboutUs li {
+  display: inline-block;
+  margin-right: 20px;
+  text-align: center;
+}
+#aboutUs li img {
+  max-width: 200px;
+  max-height: 200px;
 
+}
+#aboutUs li a {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.element {
+  margin-bottom: 10px; /* add margin to create space between individual elements */
+  border: 1px solid #ccc; /* add a border to create visual separation */
+  padding: 10px; /* add padding to the border to create more space */
+}
+
+p {
+  margin-bottom: 20px; /* increase the margin bottom to add space between paragraphs */
+}
+
+.section {
+  padding: 30px 0; /* add padding to the top and bottom of the section to create more space */
+}
